@@ -228,7 +228,7 @@ class BaspiGarage_one(polyinterface.Node):
             self.setDriver("GV6", 1)
             self.setDriver("GV0", 255) 
             LOGGER.info('Output 1 On')   
-            time.sleep(1)
+            time.sleep(2)
         if self.bc.binaryOutput(1) != 0:    
             self.bc.binaryOutput(1, 0)
             LOGGER.info('Output 1 Off')
@@ -236,7 +236,7 @@ class BaspiGarage_one(polyinterface.Node):
             self.setDriver("GV0", 255)
             self.delay1(self)
     def delay1(self, command):
-        time.sleep(10)
+        time.sleep(15)
         self.doorStat1(self)
         if self.bc.universalInput(1) == 0:
             self.doorStat1(self)
@@ -275,7 +275,7 @@ class BaspiGarage_one(polyinterface.Node):
             LOGGER.info('Output 2 Off')
             self.delay2(self)
     def delay2(self, command):
-        time.sleep(10)
+        time.sleep(15)
         self.doorStat2(self)
         if self.bc.universalInput(1) == 0:
             self.doorStat2(self)
@@ -305,7 +305,7 @@ class BaspiGarage_one(polyinterface.Node):
             self.setDriver("GV2", 255) 
             LOGGER.info('Output 3 Off')
     def delay3(self, command):
-        time.sleep(10)
+        time.sleep(15)
         self.doorStat3(self)
         if self.bc.universalInput(1) == 0:
             self.doorStat3(self)
@@ -335,7 +335,7 @@ class BaspiGarage_one(polyinterface.Node):
             self.setDriver("GV3", 255)
             LOGGER.info('Output 4 Off')
     def delay4(self, command):
-        time.sleep(10)
+        time.sleep(15)
         self.doorStat4(self)
         if self.bc.universalInput(1) == 0:
             self.doorStat4(self)        
@@ -393,7 +393,7 @@ class BaspiGarage_one(polyinterface.Node):
             self.setDriver("GV5", 255)
             LOGGER.info('Output 6 Off')
     def delay6(self, command):
-        time.sleep(10)
+        time.sleep(15)
         self.doorStat6(self)
         if self.bc.universalInput(1) == 0:
             self.doorStat6(self)        

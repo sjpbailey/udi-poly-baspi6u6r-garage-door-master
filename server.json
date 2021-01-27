@@ -8,12 +8,12 @@
     "notice": "Nothing can be blamed on me, use at your own risk",
     "shortPoll": "60",
     "longPoll": "240",
-    "profile_version": "2.6.2",
+    "profile_version": "2.6.1",
     "credits": [
         {
             "title": "BASpi Garage Doors",
             "author": "Steve Bailey",
-            "version": "2.6.7",
+            "version": "2.6.8",
             "date": "December 27, 2020",
             "source": "hhttps://github.com/sjpbailey/udi-poly-baspi6u6r-garage-door-master",
             "license": "https://github.com/sjpbailey/udi-poly-baspi6u6r-garage-door-master/LICENSE"
