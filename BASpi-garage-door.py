@@ -389,7 +389,7 @@ class BaspiGarage_one(polyinterface.Node):
             self.setDriver("GV5", 255)
             LOGGER.info('Output 6 Off')
     def delay6(self, command):
-        time.sleep(15)
+        time.sleep(5)
         self.doorStat6(self)
         if self.bc.universalInput(1) == 0:
             self.doorStat6(self)        
