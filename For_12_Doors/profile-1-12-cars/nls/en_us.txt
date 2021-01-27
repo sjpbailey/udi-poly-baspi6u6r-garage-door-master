@@ -1,0 +1,91 @@
+# controller
+ND-controller-NAME = Garage Doors
+ND-controller-ICON = GenericRspCtl
+ST-ctl-GV19-NAME = BASpi1 Online
+ST-ctl-GV20-NAME = BASpi2 Online
+CMD-ctl-QUERY"-NAME = Query
+CMD-ctl-DISCOVER-NAME = Re-Discover
+CMD-ctl-UPDATE_PROFILE-NAME = Update Profile
+CMD-ctl-REMOVE_NOTICES_ALL-NAME = Remove Notices
+
+# Baspi One
+ND-baspidoor1_id-NAME = Garage 1-6
+ND-baspidoor1_id-ICON = Electricity
+ST-BASPI1-GV0-NAME = Door-1 Status
+ST-BASPI1-GV6-NAME = Door-1 Command
+ST-BASPI1-GV21-NAME = 
+ST-BASPI1-GV1-NAME = Door-2 Status
+ST-BASPI1-GV7-NAME = Door-2 Command
+ST-BASPI1-GV22-NAME = 
+ST-BASPI1-GV2-NAME = Door-2 Status
+ST-BASPI1-GV8-NAME = Door-3 Command
+ST-BASPI1-GV23-NAME = 
+ST-BASPI1-GV3-NAME = Door-4 Status
+ST-BASPI1-GV9-NAME = Door-4 Command
+ST-BASPI1-GV24-NAME = 
+ST-BASPI1-GV4-NAME = Door-5 Status 
+ST-BASPI1-GV10-NAME = Door-5 Command
+ST-BASPI1-GV25-NAME = 
+ST-BASPI1-GV5-NAME = Door-6 Status 
+ST-BASPI1-GV11-NAME = Door-6 Command
+ST-BASPI1-GV26-NAME = 
+ST-BASPI1-ST-NAME = Online
+
+CMD-BASPI1-BON1-NAME = Door-1 Open Stop Close 
+CMD-BASPI1-BON2-NAME = Door-2 Open Stop Close
+CMD-BASPI1-BON3-NAME = Door-3 Open Stop Close
+CMD-BASPI1-BON4-NAME = Door-4 Open Stop Close
+CMD-BASPI1-BON5-NAME = Door-5 Open Stop Close
+CMD-BASPI1-BON6-NAME = Door-6 Open Stop Close
+CMD-BASPI1-QUERY"-NAME = Query
+
+# Baspi Two
+ND-baspidoor2_id-NAME = Garage 7-12
+ND-baspidoor2_id-ICON = Electricity
+ST-BASPI2-GV0-NAME = Door-1 Status
+ST-BASPI2-GV6-NAME = Door-1 Command
+ST-BASPI2-GV21-NAME = 
+ST-BASPI2-GV1-NAME = Door-2 Status
+ST-BASPI2-GV7-NAME = Door-2 Command
+ST-BASPI2-GV22-NAME = 
+ST-BASPI2-GV2-NAME = Door-2 Status
+ST-BASPI2-GV8-NAME = Door-3 Command
+ST-BASPI2-GV23-NAME = 
+ST-BASPI2-GV3-NAME = Door-4 Status
+ST-BASPI2-GV9-NAME = Door-4 Command
+ST-BASPI2-GV24-NAME = 
+ST-BASPI2-GV4-NAME = Door-5 Status 
+ST-BASPI2-GV10-NAME = Door-5 Command
+ST-BASPI2-GV25-NAME = 
+ST-BASPI2-GV5-NAME = Door-6 Status 
+ST-BASPI2-GV11-NAME = Door-6 Command
+ST-BASPI2-GV26-NAME = 
+ST-BASPI2-ST-NAME = Online
+
+CMD-BASPI2-BON1-NAME = Door-1 Open Stop Close
+CMD-BASPI2-BON2-NAME = Door-2 Open Stop Close
+CMD-BASPI2-BON3-NAME = Door-3 Open Stop Close
+CMD-BASPI2-BON4-NAME = Door-4 Open Stop Close
+CMD-BASPI2-BON5-NAME = Door-5 Open Stop Close
+CMD-BASPI2-BON6-NAME = Door-6 Open Stop Close
+CMD-BASPI2-QUERY"-NAME = Query
+
+ONOFF-1 = On
+ONOFF-0 = Off
+
+OPNCLS-0 = Closed
+OPNCLS-142 = Open
+OPNCLS-143 = Open
+OPNCLS-144 = Open
+OPNCLS-145 = Open
+OPNCLS-149 = Open
+OPNCLS-155 = Open
+OPNCLS-161 = Open
+OPNCLS-167 = Open
+OPNCLS-179 = Open
+OPNCLS-185 = Open
+OPNCLS-190 = Open
+OPNCLS-191 = Open
+OPNCLS-196 = Open
+OPNCLS-198 = Open
+OPNCLS-255 = Operating

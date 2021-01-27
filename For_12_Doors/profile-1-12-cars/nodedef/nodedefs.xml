@@ -1,0 +1,107 @@
+<nodeDefs>
+    <!-- NODE DEF from 5.0 document http://wiki.universal-devices.com/index.php?title=V50_MAIN -->
+    <!-- controller -->
+    <nodeDef id="controller" nls="ctl">
+        <editors />
+        <sts>
+			<st id="GV19" editor="bool" />
+            <st id="GV20" editor="bool" />
+		</sts>
+        <cmds>
+            <sends />
+            <accepts>
+              <cmd id="QUERY" />
+              <cmd id="DISCOVER" />
+              <cmd id="UPDATE_PROFILE" />
+            </accepts>
+        </cmds>
+    </nodeDef>
+	<!-- mynodetype--> 
+        <nodeDef id="baspidoor1_id" nls="BASPI1">
+        <editors />
+        <sts>
+            <st id="GV0" editor="OPNCLS" />
+            <st id="GV6" editor="STATUS" />
+            <st id="GV21" editor="RAWVAL" />
+            <st id="GV1" editor="OPNCLS" />
+            <st id="GV7" editor="STATUS" />
+            <st id="GV22" editor="RAWVAL" />
+            <st id="GV2" editor="OPNCLS" />
+            <st id="GV8" editor="STATUS" />
+            <st id="GV23" editor="RAWVAL" />
+            <st id="GV3" editor="OPNCLS" />
+            <st id="GV9" editor="STATUS" />
+            <st id="GV24" editor="RAWVAL" />
+            <st id="GV4" editor="OPNCLS" />
+            <st id="GV10" editor="STATUS" />
+            <st id="GV25" editor="RAWVAL" />
+            <st id="GV5" editor="OPNCLS" />
+            <st id="GV11" editor="STATUS" />
+            <st id="GV26" editor="RAWVAL" />
+        </sts>
+        <cmds>
+            <sends>
+                <cmd id="BON1" />
+                <cmd id="BON2" />
+                <cmd id="BON3" />
+                <cmd id="BON4" />
+                <cmd id="BON5" />
+                <cmd id="BON6" />
+            </sends>    
+            <accepts>
+              <cmd id="BON1" />
+            <!--<p id="" editor="onoff" init="GV6" />
+        </cmd>-->
+              <cmd id="BON2" />
+              <cmd id="BON3" />
+              <cmd id="BON4" />
+              <cmd id="BON5" />
+              <cmd id="BON6" />
+              <cmd id="QUERY" />
+            </accepts>
+        </cmds>
+    </nodeDef>
+    <!-- mynodetype--> 
+        <nodeDef id="baspidoor2_id" nls="BASPI2">
+        <editors />
+        <sts>
+            <st id="GV0" editor="OPNCLS" />
+            <st id="GV6" editor="STATUS" />
+            <st id="GV21" editor="RAWVAL" />
+            <st id="GV1" editor="OPNCLS" />
+            <st id="GV7" editor="STATUS" />
+            <st id="GV22" editor="RAWVAL" />
+            <st id="GV2" editor="OPNCLS" />
+            <st id="GV8" editor="STATUS" />
+            <st id="GV23" editor="RAWVAL" />
+            <st id="GV3" editor="OPNCLS" />
+            <st id="GV9" editor="STATUS" />
+            <st id="GV24" editor="RAWVAL" />
+            <st id="GV4" editor="OPNCLS" />
+            <st id="GV10" editor="STATUS" />
+            <st id="GV25" editor="RAWVAL" />
+            <st id="GV5" editor="OPNCLS" />
+            <st id="GV11" editor="STATUS" />
+            <st id="GV26" editor="RAWVAL" />
+        </sts>
+        <cmds>
+            <sends>
+                <cmd id="BON1" />
+                <cmd id="BON2" />
+                <cmd id="BON3" />
+                <cmd id="BON4" />
+                <cmd id="BON5" />
+                <cmd id="BON6" />
+            </sends>
+            <accepts>
+              <cmd id="BON1" />
+                <cmd id="BON2" />
+                <cmd id="BON3" />
+                <cmd id="BON4" />
+                <cmd id="BON5" />
+                <cmd id="BON6" />
+              <cmd id="QUERY" />
+            </accepts>
+        </cmds>
+    </nodeDef>
+</nodeDefs>
