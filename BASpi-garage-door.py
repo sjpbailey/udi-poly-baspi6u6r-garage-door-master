@@ -280,7 +280,7 @@ class BaspiGarage_one(polyinterface.Node):
         if self.bc.universalInput(1) == 0:
             self.doorStat2(self)
     # Door-2 Status
-    def doorStat2(self, command=None):
+    def doorStat2(self, command):
         if 'sumss_count2' == 12:
             self.setDriver("GV1", '12', report=True, force=True)
         elif 'sumss_count2' == 5:
@@ -310,10 +310,10 @@ class BaspiGarage_one(polyinterface.Node):
         if self.bc.universalInput(1) == 0:
             self.doorStat3(self)
     # Door-3 Status
-    def doorStat3(self, command=None):
-        if int('sumss_count3') == int(12):
+    def doorStat3(self, command):
+        if 'sumss_count3' == 12:
             self.setDriver("GV2", '12', report=True, force=True)
-        elif int('sumss_count3') == int(5):
+        elif 'sumss_count3' == 5:
               self.setDriver("GV2", '5', report=True, force=True)
         elif self.bc.universalInput(3) == 0: 
               self.setDriver("GV2", 0, report=True, force=True)
@@ -340,10 +340,10 @@ class BaspiGarage_one(polyinterface.Node):
         if self.bc.universalInput(1) == 0:
             self.doorStat4(self)        
     # Door-4 Status
-    def doorStat4(self, command=None):
-        if int('sumss_count4') == int(12):
+    def doorStat4(self, command):
+        if 'sumss_count4' == 12:
             self.setDriver("GV3", '12', report=True, force=True)
-        elif int('sumss_count4') == int(5):
+        elif 'sumss_count4' == 5:
               self.setDriver("GV3", '5', report=True, force=True)
         elif self.bc.universalInput(4) == 0: 
               self.setDriver("GV3", 0, report=True, force=True)
@@ -369,10 +369,10 @@ class BaspiGarage_one(polyinterface.Node):
         if self.bc.universalInput(1) == 0:
             self.doorStat5(self)        
     # Door-5 Status
-    def doorStat5(self, command=None):
-        if int('sumss_count5') == int(12):
+    def doorStat5(self, command):
+        if 'sumss_count5' == 12:
             self.setDriver("GV4", '12', report=True, force=True)
-        elif int('sumss_count5') == int(5):
+        elif 'sumss_count5' == 5:
               self.setDriver("GV4", '5', report=True, force=True)
         elif self.bc.universalInput(5) == 0: 
               self.setDriver("GV4", 0, report=True, force=True)
@@ -397,8 +397,7 @@ class BaspiGarage_one(polyinterface.Node):
         self.doorStat6(self)
         if self.bc.universalInput(1) == 0:
             self.doorStat6()
-            self.reportDrivers()        
-    # Door-6 Status
+   # Door-6 Status
     def doorStat6(self, command):
         if 'sumss_count6' == 12:
             self.setDriver("GV5", '12', report=True, force=True)
