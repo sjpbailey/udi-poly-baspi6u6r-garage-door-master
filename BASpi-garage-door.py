@@ -390,9 +390,10 @@ class BaspiGarage_one(polyinterface.Node):
             LOGGER.info('Output 6 Off')
     def delay6(self, command):
         time.sleep(5)
-        self.doorStat6(self)
-        #if self.bc.universalInput(1) == 0:
-        #    self.doorStat6(self)        
+        #self.doorStat6(self)
+        if self.bc.universalInput(1) == 0:
+            self.doorStat6()
+            self.reportDrivers()        
     # Door-6 Status
     def doorStat6(self, command):
         if int('sumss_count6') == int(12):
