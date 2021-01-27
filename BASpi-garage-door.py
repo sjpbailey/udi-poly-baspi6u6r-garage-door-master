@@ -248,8 +248,8 @@ class BaspiGarage_one(polyinterface.Node):
               self.setDriver("GV0", '5', report=True, force=True)
         elif 'sumss_count1' == 0: 
               self.setDriver("GV0", 0, report=True, force=True)
-        else:
-            pass
+        pass
+
     # Door-1 Stop
     def stopDoor1(self, command):
         if self.bc.binaryOutput(1) != 1:
@@ -287,8 +287,7 @@ class BaspiGarage_one(polyinterface.Node):
               self.setDriver("GV0", '5', report=True, force=True)
         elif self.bc.universalInput(2) == 0: 
               self.setDriver("GV0", 0, report=True, force=True)
-        else:
-            pass         
+        pass         
     
    
    # Output Door-3
@@ -317,8 +316,7 @@ class BaspiGarage_one(polyinterface.Node):
               self.setDriver("GV0", '5', report=True, force=True)
         elif self.bc.universalInput(3) == 0: 
               self.setDriver("GV0", 0, report=True, force=True)
-        else:
-            pass 
+        pass 
     
 
     # Output Door-4
@@ -347,8 +345,7 @@ class BaspiGarage_one(polyinterface.Node):
               self.setDriver("GV0", '5', report=True, force=True)
         elif self.bc.universalInput(4) == 0: 
               self.setDriver("GV0", 0, report=True, force=True)
-        else:
-            pass         
+        pass         
 
     # Output Door-5
     def setOn5(self, command):
@@ -376,8 +373,7 @@ class BaspiGarage_one(polyinterface.Node):
               self.setDriver("GV0", '5', report=True, force=True)
         elif self.bc.universalInput(5) == 0: 
               self.setDriver("GV0", 0, report=True, force=True)
-        else:
-            pass         
+        pass         
 
     # Output Door-6
     def setOn6(self, command):
@@ -405,8 +401,7 @@ class BaspiGarage_one(polyinterface.Node):
               self.setDriver("GV0", '5', report=True, force=True)
         elif self.bc.universalInput(6) == 0: 
               self.setDriver("GV0", 0, report=True, force=True)
-        else:
-            pass     
+        pass     
      
     def query(self,command=None):
         self.reportDrivers()
