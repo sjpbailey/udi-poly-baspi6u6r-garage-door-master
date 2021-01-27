@@ -391,8 +391,8 @@ class BaspiGarage_one(polyinterface.Node):
     def delay6(self, command):
         time.sleep(5)
         self.doorStat6(self)
-        if self.bc.universalInput(1) == 0:
-            self.doorStat6(self)        
+        #if self.bc.universalInput(1) == 0:
+        #    self.doorStat6(self)        
     # Door-6 Status
     def doorStat6(self, command=None):
         if int('sumss_count6') == int(12):
