@@ -242,9 +242,9 @@ class BaspiGarage_one(polyinterface.Node):
             self.doorStat1(self)
     # Door - 1 Status
     def doorStat1(self, command):
-        if float('sumss_count1') > float(12000.0):
+        if int('sumss_count1') == int(12):
             self.setDriver("GV0", '12', report=True, force=True)
-        elif float('sumss_count1') > float(5500.0):
+        elif int('sumss_count1') == int(5):
               self.setDriver("GV0", '5', report=True, force=True)
         elif 'sumss_count1' == 0: 
               self.setDriver("GV0", 0, report=True, force=True)
