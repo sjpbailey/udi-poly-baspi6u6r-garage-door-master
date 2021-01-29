@@ -330,7 +330,7 @@ class BaspiGarage_one(polyinterface.Node):
             time.sleep(2)
         if self.bc.binaryOutput(4) != 0:    
             self.bc.binaryOutput(4, 0)
-            #self.setDriver("GV9", 0) 
+            self.setDriver("GV9", 0) 
             #self.setDriver("GV3", 255)
             LOGGER.info('Output 4 Off')
             self.delay4(self)
