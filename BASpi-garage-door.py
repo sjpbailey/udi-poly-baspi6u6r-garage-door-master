@@ -232,8 +232,8 @@ class BaspiGarage_one(polyinterface.Node):
         if self.bc.binaryOutput(1) != 0:    
             self.bc.binaryOutput(1, 0)
             LOGGER.info('Output 1 Off')
-            self.setDriver("GV6", 0)
-            self.setDriver("GV0", 255)
+            #self.setDriver("GV6", 0)
+            #self.setDriver("GV0", 255)
             self.delay1(self)
     def delay1(self, command):
         time.sleep(15)
@@ -247,7 +247,7 @@ class BaspiGarage_one(polyinterface.Node):
         elif 'sumss_count1' == 5:
               self.setDriver("GV0", '5', report=True, force=True)
         elif self.bc.universalInput(1) == 0: 
-              self.setDriver("GV0", 0, report=True, force=True)
+              self.setDriver("GV0", '0', report=True, force=True)
         pass
 
     # Door-1 Stop
@@ -270,8 +270,8 @@ class BaspiGarage_one(polyinterface.Node):
             time.sleep(2)
         if self.bc.binaryOutput(2) != 0:        
             self.bc.binaryOutput(2, 0)
-            self.setDriver("GV7", 0)
-            self.setDriver("GV1", 255) 
+            #self.setDriver("GV7", 0)
+            #self.setDriver("GV1", 255) 
             LOGGER.info('Output 2 Off')
             self.delay2(self)
     def delay2(self, command):
@@ -286,7 +286,7 @@ class BaspiGarage_one(polyinterface.Node):
         elif 'sumss_count2' == 5:
               self.setDriver("GV1", '5', report=True, force=True)
         elif self.bc.universalInput(2) == 0: 
-              self.setDriver("GV1", 0, report=True, force=True)
+              self.setDriver("GV1", '0', report=True, force=True)
         pass         
     
    
@@ -300,8 +300,8 @@ class BaspiGarage_one(polyinterface.Node):
             time.sleep(2)
         if self.bc.binaryOutput(3) != 0:     
             self.bc.binaryOutput(3, 0)
-            self.setDriver("GV8", 0)
-            self.setDriver("GV2", 255) 
+            #self.setDriver("GV8", 0)
+            #self.setDriver("GV2", 255) 
             LOGGER.info('Output 3 Off')
             self.delay3(self)
     def delay3(self, command):
@@ -316,7 +316,7 @@ class BaspiGarage_one(polyinterface.Node):
         elif 'sumss_count3' == 5:
               self.setDriver("GV2", '5', report=True, force=True)
         elif self.bc.universalInput(3) == 0: 
-              self.setDriver("GV2", 0, report=True, force=True)
+              self.setDriver("GV2", '0', report=True, force=True)
         pass 
     
 
@@ -330,8 +330,8 @@ class BaspiGarage_one(polyinterface.Node):
             time.sleep(2)
         if self.bc.binaryOutput(4) != 0:    
             self.bc.binaryOutput(4, 0)
-            self.setDriver("GV9", 0) 
-            self.setDriver("GV3", 255)
+            #self.setDriver("GV9", 0) 
+            #self.setDriver("GV3", 255)
             LOGGER.info('Output 4 Off')
             self.delay4(self)
     def delay4(self, command):
@@ -346,7 +346,7 @@ class BaspiGarage_one(polyinterface.Node):
         elif 'sumss_count4' == 5:
               self.setDriver("GV3", '5', report=True, force=True)
         elif self.bc.universalInput(4) == 0: 
-              self.setDriver("GV3", 0, report=True, force=True)
+              self.setDriver("GV3", '0', report=True, force=True)
         pass         
 
     # Output Door-5
@@ -359,8 +359,8 @@ class BaspiGarage_one(polyinterface.Node):
             time.sleep(2)
         if self.bc.binaryOutput(5) != 0:    
             self.bc.binaryOutput(5,0)
-            self.setDriver("GV10", 0)
-            self.setDriver("GV4", 255) 
+            #self.setDriver("GV10", 0)
+            #self.setDriver("GV4", 255) 
             LOGGER.info('Output 5 Off')
             self.delay5(self)
     def delay5(self, command):
@@ -375,7 +375,7 @@ class BaspiGarage_one(polyinterface.Node):
         elif 'sumss_count5' == 5:
               self.setDriver("GV4", '5', report=True, force=True)
         elif self.bc.universalInput(5) == 0: 
-              self.setDriver("GV4", 0, report=True, force=True)
+              self.setDriver("GV4", '0', report=True, force=True)
         pass         
 
     # Output Door-6
@@ -388,8 +388,8 @@ class BaspiGarage_one(polyinterface.Node):
             time.sleep(2)
         if self.bc.binaryOutput(6) != 0:    
             self.bc.binaryOutput(6,0)
-            self.setDriver("GV11", 0) 
-            self.setDriver("GV5", 255)
+            #self.setDriver("GV11", 0) 
+            #self.setDriver("GV5", 255)
             LOGGER.info('Output 6 Off')
             self.delay6(self)
     def delay6(self, command):
@@ -404,7 +404,7 @@ class BaspiGarage_one(polyinterface.Node):
         elif 'sumss_count6' == 5:
               self.setDriver("GV5", '5', report=True, force=True)
         elif self.bc.universalInput(6) == 0: 
-              self.setDriver("GV5", 0, report=True, force=True)
+              self.setDriver("GV5", '0', report=True, force=True)
         pass     
      
     def query(self,command=None):
