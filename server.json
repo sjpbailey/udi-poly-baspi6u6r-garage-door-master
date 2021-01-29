@@ -1,5 +1,5 @@
 {
-    "name": "Garage Doors",
+    "name": "BasGarageDoors",
     "docs": "https://github.com/sjpbailey/udi-poly-baspi6u6r-garage-door-master",
     "type": "python3",
     "executable": "BASpi-garage-door.py",
