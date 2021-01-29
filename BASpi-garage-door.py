@@ -233,7 +233,6 @@ class BaspiGarage_one(polyinterface.Node):
             self.bc.binaryOutput(1, 0)
             LOGGER.info('Output 1 Off')
             self.setDriver("GV6", 0)
-            #self.setDriver("GV0", 255)
             self.delay1(self)
     def delay1(self, command):
         time.sleep(15)
@@ -271,7 +270,6 @@ class BaspiGarage_one(polyinterface.Node):
         if self.bc.binaryOutput(2) != 0:        
             self.bc.binaryOutput(2, 0)
             self.setDriver("GV7", 0)
-            #self.setDriver("GV1", 255) 
             LOGGER.info('Output 2 Off')
             self.delay2(self)
     def delay2(self, command):
@@ -301,7 +299,6 @@ class BaspiGarage_one(polyinterface.Node):
         if self.bc.binaryOutput(3) != 0:     
             self.bc.binaryOutput(3, 0)
             self.setDriver("GV8", 0)
-            #self.setDriver("GV2", 255) 
             LOGGER.info('Output 3 Off')
             self.delay3(self)
     def delay3(self, command):
@@ -331,7 +328,6 @@ class BaspiGarage_one(polyinterface.Node):
         if self.bc.binaryOutput(4) != 0:    
             self.bc.binaryOutput(4, 0)
             self.setDriver("GV9", 0) 
-            #self.setDriver("GV3", 255)
             LOGGER.info('Output 4 Off')
             self.delay4(self)
     def delay4(self, command):
@@ -360,7 +356,6 @@ class BaspiGarage_one(polyinterface.Node):
         if self.bc.binaryOutput(5) != 0:    
             self.bc.binaryOutput(5,0)
             self.setDriver("GV10", 0)
-            #self.setDriver("GV4", 255) 
             LOGGER.info('Output 5 Off')
             self.delay5(self)
     def delay5(self, command):
@@ -389,7 +384,6 @@ class BaspiGarage_one(polyinterface.Node):
         if self.bc.binaryOutput(6) != 0:    
             self.bc.binaryOutput(6,0)
             self.setDriver("GV11", 0) 
-            #self.setDriver("GV5", 255)
             LOGGER.info('Output 6 Off')
             self.delay6(self)
     def delay6(self, command):
@@ -411,7 +405,7 @@ class BaspiGarage_one(polyinterface.Node):
         self.reportDrivers()
         #self.check_params()
         #for node in self.nodes:
-        #    self.nodes[node].reportDrivers()
+        #self.nodes[node].reportDrivers()
 
     "Hints See: https://github.com/UniversalDevicesInc/hints"
     hint = [1,2,3,4]
