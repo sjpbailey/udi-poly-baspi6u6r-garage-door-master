@@ -41,8 +41,6 @@
         <cmds>
             <sends>
                 <cmd id="BON1" />
-                <cmd id="BST1" />
-                <cmd id="BSU1" />
                 <cmd id="BON2" />
                 <cmd id="BON3" />
                 <cmd id="BON4" />
@@ -51,8 +49,6 @@
             </sends>    
             <accepts>
               <cmd id="BON1" />
-              <cmd id="BST1" />
-              <cmd id="BSU1" />
               <cmd id="BON2" />
               <cmd id="BON3" />
               <cmd id="BON4" />
