@@ -12,9 +12,9 @@ from bascontrolns import Device, Platform
 
 LOGGER = polyinterface.LOGGER
 
-class BaspiGarage_one(polyinterface.Node):
+class BaspGarageDoorsNodesiGarage_one(polyinterface.Node):
     def __init__(self, controller, primary, address, name, ipaddress, bc):
-        super(BaspiGarage_one, self).__init__(controller, primary, address, name)
+        super(GarageDoorsNodes, self).__init__(controller, primary, address, name)
         self.ipaddress = (str(ipaddress).upper()) #Device(str(ipaddress).upper())
         self.bc = bc
         sumss_count1=None
