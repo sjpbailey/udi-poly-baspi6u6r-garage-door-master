@@ -12,7 +12,7 @@ from bascontrolns import Device, Platform
 
 LOGGER = polyinterface.LOGGER
 
-class BaspGarageDoorsNodesiGarage_one(polyinterface.Node):
+class GarageDoorsNodes(polyinterface.Node):
     def __init__(self, controller, primary, address, name, ipaddress, bc):
         super(GarageDoorsNodes, self).__init__(controller, primary, address, name)
         self.ipaddress = (str(ipaddress).upper()) #Device(str(ipaddress).upper())
