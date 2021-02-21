@@ -1,32 +1,22 @@
 <nodeDefs>
     <!-- NODE DEF from 5.0 document http://wiki.universal-devices.com/index.php?title=V50_MAIN -->
-    <!-- controller, this must mach the id in your Controller class-->
+    <!-- controller -->
     <nodeDef id="controller" nls="ctl">
         <editors />
         <sts>
-			<st id="ST" editor="bool" />
-            <!--<st id="GV1" editor="I_DEBUG" />-->
-		</sts>
+			<st id="GV19" editor="bool" />
+        </sts>
         <cmds>
-            <sends>
-              <!-- These are for our heartbeat -->
-              <cmd id="DON" />
-              <cmd id="DOF" />
-            </sends>
+            <sends />
             <accepts>
-            <!--<cmd id="SET_DM">
-               <p id="" editor="I_DEBUG" init="GV1" />
-              </cmd>-->
               <cmd id="QUERY" />
               <cmd id="DISCOVER" />
-              <cmd id="REMOVE_NOTICES_ALL" />
-              <cmd id="REMOVE_NOTICE_TEST" />
               <cmd id="UPDATE_PROFILE" />
             </accepts>
         </cmds>
     </nodeDef>
-	<!-- nodeid -->
-    <nodeDef id="baspidoor1_id" nls="BASPI1">
+	<!-- mynodetype--> 
+        <nodeDef id="baspidoor1_id" nls="BASPI1">
         <editors />
         <sts>
             <st id="GV0" editor="OPNCLS" />
@@ -56,16 +46,15 @@
                 <cmd id="BON4" />
                 <cmd id="BON5" />
                 <cmd id="BON6" />
-                <cmd id="QUERY" />
             </sends>    
             <accepts>
-                <cmd id="BON1" />
-                <cmd id="BON2" />
-                <cmd id="BON3" />
-                <cmd id="BON4" />
-                <cmd id="BON5" />
-                <cmd id="BON6" />
-                <cmd id="QUERY" />
+              <cmd id="BON1" />
+              <cmd id="BON2" />
+              <cmd id="BON3" />
+              <cmd id="BON4" />
+              <cmd id="BON5" />
+              <cmd id="BON6" />
+              <cmd id="QUERY" />
             </accepts>
         </cmds>
     </nodeDef>

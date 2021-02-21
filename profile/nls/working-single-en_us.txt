@@ -1,17 +1,14 @@
-
 # controller
-ND-controller-NAME = Garage Doors
-ND-controller-ICON = Electricity
-CMD-ctl-QUERY-NAME = Query
+ND-controller-NAME = BAS Garage Doors
+ND-controller-ICON = GenericRspCtl
+ST-ctl-GV19-NAME = BASpi1 Online
+CMD-ctl-QUERY"-NAME = Query
 CMD-ctl-DISCOVER-NAME = Re-Discover
 CMD-ctl-UPDATE_PROFILE-NAME = Update Profile
-CMD-ctl-REMOVE_NOTICES_ALL-NAME = Remove All Notices
-CMD-ctl-REMOVE_NOTICE_TEST-NAME = Remove Notice Test
-##CMD-ctl-SET_DM-NAME = Set Logger Level
-##ST-ctl-GV1-NAME = Logger Level
-ST-ctl-ST-NAME = NodeServer Online
+CMD-ctl-REMOVE_NOTICES_ALL-NAME = Remove Notices
 
-ND-baspidoor1_id-NAME = Doors 1-6
+# Baspi One
+ND-baspidoor1_id-NAME = Garage 1-6
 ND-baspidoor1_id-ICON = Electricity
 ST-BASPI1-GV0-NAME = Door-1 Status
 ST-BASPI1-GV6-NAME = Door-1 Command
@@ -19,7 +16,7 @@ ST-BASPI1-GV21-NAME = -
 ST-BASPI1-GV1-NAME = Door-2 Status
 ST-BASPI1-GV7-NAME = Door-2 Command
 ST-BASPI1-GV22-NAME = -
-ST-BASPI1-GV2-NAME = Door-3 Status
+ST-BASPI1-GV2-NAME = Door-2 Status
 ST-BASPI1-GV8-NAME = Door-3 Command
 ST-BASPI1-GV23-NAME = -
 ST-BASPI1-GV3-NAME = Door-4 Status
@@ -31,25 +28,19 @@ ST-BASPI1-GV25-NAME = -
 ST-BASPI1-GV5-NAME = Door-6 Status 
 ST-BASPI1-GV11-NAME = Door-6 Command
 ST-BASPI1-GV26-NAME = -
-#ST-BASPI1-ST-NAME = Online
+ST-BASPI1-ST-NAME = Online
 
-CMD-BASPI1-BON1-NAME = Enable Door-1
-CMD-BASPI1-BON2-NAME = Enable Door-2
-CMD-BASPI1-BON3-NAME = Enable Door-3
-CMD-BASPI1-BON4-NAME = Enable Door-4
-CMD-BASPI1-BON5-NAME = Enable Door-5
-CMD-BASPI1-BON6-NAME = Enable Door-6
+CMD-BASPI1-BON1-NAME = Door-1 Open Close
+CMD-BASPI1-BON2-NAME = Door-2 Open Close
+CMD-BASPI1-BON3-NAME = Door-3 Open Close
+CMD-BASPI1-BON4-NAME = Door-4 Open Close
+CMD-BASPI1-BON5-NAME = Door-5 Open Close
+CMD-BASPI1-BON6-NAME = Door-6 Open Close
 CMD-BASPI1-QUERY"-NAME = Query
 
 
 
-# Debug/Logger Modes
-CDM-9 = Debug + Modules
-CDM-10 = Debug
-CDM-20 = Info
-CDM-30 = Warning
-CDM-40 = Error
-CDM-50 = Critical
+
 
 
 ONOFF-1 = On
