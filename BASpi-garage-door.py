@@ -155,7 +155,9 @@ class BaspiGarage_one(polyinterface.Node):
             LOGGER.info('ipaddress')
         if self.bc.ePlatform == Platform.BASC_PI:
             LOGGER.info('connected to Garage Door 1-6')
-            self.setDriver('ST', 1)    
+        if self.bc.ePlatform == Platform.BASC_ED:
+            LOGGER.info('connected to BASpi-Edge Module ONE')
+        self.setDriver('ST', 1)    
 
         LOGGER.info('\t' + str(self.bc.uiQty) + ' Universal inputs in this Doors 1-6')
         LOGGER.info('\t' + str(self.bc.boQty) + ' Binary outputs in this Doors 1-6')
