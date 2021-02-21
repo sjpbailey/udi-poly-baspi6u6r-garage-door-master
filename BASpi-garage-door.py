@@ -239,8 +239,8 @@ class BaspiGarage_one(polyinterface.Node):
     def delay1(self, command):
         time.sleep(15)
         self.doorStat1(self)
-        if self.bc.universalInput(1) == 0:
-            self.reportDrivers()
+        #if self.bc.universalInput(1) == 0:
+        #    self.reportDrivers()
    
     # Door-1 Status
     def doorStat1(self, command):
@@ -270,8 +270,8 @@ class BaspiGarage_one(polyinterface.Node):
     def delay2(self, command):
         time.sleep(15)
         self.doorStat2(self)
-        if self.bc.universalInput(2) == 0:
-            self.doorStat2(self)
+        #if self.bc.universalInput(2) == 0:
+        #    self.doorStat2(self)
     
     # Door-2 Status
     def doorStat2(self, command):
@@ -301,8 +301,8 @@ class BaspiGarage_one(polyinterface.Node):
     def delay3(self, command):
         time.sleep(15)
         self.doorStat3(self)
-        if self.bc.universalInput(3) == 0:
-            self.reportDrivers()
+        #if self.bc.universalInput(3) == 0:
+        #    self.reportDrivers()
     
     # Door-3 Status
     def doorStat3(self, command):
@@ -332,8 +332,8 @@ class BaspiGarage_one(polyinterface.Node):
     def delay4(self, command):
         time.sleep(15)
         self.doorStat4(self)
-        if self.bc.universalInput(4) == 0:
-            self.doorStat4(self)
+        #if self.bc.universalInput(4) == 0:
+        #    self.doorStat4(self)
     
     # Door-4 Status
     def doorStat4(self, command):
@@ -364,8 +364,8 @@ class BaspiGarage_one(polyinterface.Node):
     def delay5(self, command):
         time.sleep(15)
         self.doorStat5(self)
-        if self.bc.universalInput(5) == 0:
-            self.doorStat5(self)
+        #if self.bc.universalInput(5) == 0:
+        #    self.doorStat5(self)
     
     # Door-5 Status
     def doorStat5(self, command):
@@ -395,8 +395,8 @@ class BaspiGarage_one(polyinterface.Node):
     def delay6(self, command):
         time.sleep(15)
         self.doorStat6(self)
-        if self.bc.universalInput(6) == 0:
-            self.doorStat6(self)
+        #if self.bc.universalInput(6) == 0:
+        #    self.doorStat6(self)
     
     # Door-6 Status
     def doorStat6(self, command):
