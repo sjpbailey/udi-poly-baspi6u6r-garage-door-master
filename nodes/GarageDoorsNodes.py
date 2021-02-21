@@ -232,7 +232,6 @@ class GarageDoorsNodes(polyinterface.Node):
         if self.bc.binaryOutput(5) != 0:    
             self.bc.binaryOutput(5,0)
             self.setDriver("GV10", 0) 
-            self.doorStat3(self)
             LOGGER.info('Output 5 Off')
             self.delay5(self)
     
