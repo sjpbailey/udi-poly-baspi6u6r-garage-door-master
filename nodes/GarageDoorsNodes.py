@@ -279,10 +279,10 @@ class GarageDoorsNodes(polyinterface.Node):
         LOGGER.info('Door 6 Operation Complete')
 
     def shortPoll(self):
-        if int(self.getDriver('ST')) == 1:
-            self.setDriver('ST',0)
-        else:
-            self.setDriver('ST',1)
+        #if int(self.getDriver('ST')) == 1:
+        #    self.setDriver('ST',0)
+        #else:
+        #    self.setDriver('ST',1)
         LOGGER.debug('shortPoll')
         
     def longPoll(self):
