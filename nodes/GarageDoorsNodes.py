@@ -277,6 +277,17 @@ class GarageDoorsNodes(polyinterface.Node):
         if self.bc.universalInput(6) == 0:
             self.setDriver("GV5", '0', report=True, force=True)
         LOGGER.info('Door 6 Operation Complete')
+
+    def shortPoll(self):
+        LOGGER.debug('shortPoll')
+        if int(self.getDriver('ST')) == 1:
+            self.setDriver('ST',0)
+        else:
+            self.setDriver('ST',1)
+        LOGGER.debug('%s: get ST=%s',self.lpfx,self.getDriver('ST'))
+
+    def longPoll(self):
+        LOGGER.debug('longPoll')    
      
     def query(self,command=None):
         self.reportDrivers()
