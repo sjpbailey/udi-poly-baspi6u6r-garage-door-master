@@ -146,95 +146,95 @@ class BaspiGarage_one(polyinterface.Node):
         sumss_count1=None
 
     def start(self):
-            if self.ipaddress is not None:
-                self.bc = Device(self.ipaddress)
+        if self.ipaddress is not None:
+            self.bc = Device(self.ipaddress)
                         
-            ### BASpi One ###
-            if self.bc.ePlatform == Platform.BASC_NONE:
-                LOGGER.info('Unable to connect to Garage Doo 1-6')
-                LOGGER.info('ipaddress')
-            if self.bc.ePlatform == Platform.BASC_PI:
-                LOGGER.info('connected to Garage Door 1-6')
-                self.setDriver('ST', 1)    
+        ### BASpi One ###
+        if self.bc.ePlatform == Platform.BASC_NONE:
+            LOGGER.info('Unable to connect to Garage Doo 1-6')
+            LOGGER.info('ipaddress')
+        if self.bc.ePlatform == Platform.BASC_PI:
+            LOGGER.info('connected to Garage Door 1-6')
+            self.setDriver('ST', 1)    
 
-            LOGGER.info('\t' + str(self.bc.uiQty) + ' Universal inputs in this Doors 1-6')
-            LOGGER.info('\t' + str(self.bc.boQty) + ' Binary outputs in this Doors 1-6')
-            LOGGER.info('\t' + str(self.bc.biQty) + ' Binary inputs in This Doors 1-6')
-            LOGGER.info('\t' + str(self.bc.aoQty) + ' Analog outputs In This Doors 1-6')
-                        
-            ### Universal Inputs Also Conversion ###
-            input_one = self.bc.universalInput(1)
-            if input_one is not None:
-                sumss_count1 = int(float(input_one))//1000
-                self.setDriver('GV0', sumss_count1, force=True)
-                return sumss_count1
-
-            input_two = self.bc.universalInput(2)    
-            if input_two is not None:
-                sumss_count2 = int(float(input_two))//1000
-                self.setDriver('GV1', sumss_count2, force=True)
-                return sumss_count2
-
-            input_thr = self.bc.universalInput(3)
-            if input_thr is not None:
-                sumss_count3 = int(float(input_thr))//1000
-                self.setDriver('GV2', sumss_count3, force=True)
-                return sumss_count3
-            
-            input_for = self.bc.universalInput(4)    
-            if input_for is not None:
-                sumss_count4 = int(float(input_for))//1000
-                self.setDriver('GV3', sumss_count4, force=True)
-                return sumss_count4
-
-            input_fiv = self.bc.universalInput(5)
-            if input_fiv is not None:
-                sumss_count5 = int(float(input_fiv))//1000
-                self.setDriver('GV4', sumss_count5, force=True)
-                return sumss_count5
-
-            input_six = self.bc.universalInput(6)
-            if input_six is not None:
-                sumss_count6 = int(float(input_six))//1000
-                self.setDriver('GV5', sumss_count6, force=True)
-                return sumss_count6
-
-            LOGGER.info(sumss_count1)
-            LOGGER.info(sumss_count2)
-            LOGGER.info(sumss_count3)
-            LOGGER.info(sumss_count4)
-            LOGGER.info(sumss_count5)
-            LOGGER.info(sumss_count6)
-           
-            # Binary/Digital Outputs
-            output_one = (self.bc.binaryOutput(1))
-            output_two = (self.bc.binaryOutput(2))
-            output_tre = (self.bc.binaryOutput(3))
-            output_for = (self.bc.binaryOutput(4))
-            output_fiv = (self.bc.binaryOutput(5))
-            output_six = (self.bc.binaryOutput(6))
-                        
+        LOGGER.info('\t' + str(self.bc.uiQty) + ' Universal inputs in this Doors 1-6')
+        LOGGER.info('\t' + str(self.bc.boQty) + ' Binary outputs in this Doors 1-6')
+        LOGGER.info('\t' + str(self.bc.biQty) + ' Binary inputs in This Doors 1-6')
+        LOGGER.info('\t' + str(self.bc.aoQty) + ' Analog outputs In This Doors 1-6')
+                     
+        ### Universal Inputs Also Conversion ###
+        input_one = self.bc.universalInput(1)
+        if input_one is not None:
+            sumss_count1 = int(float(input_one))//1000
             self.setDriver('GV0', sumss_count1, force=True)
-            self.setDriver('GV1', sumss_count2, force=True)
-            self.setDriver('GV2', sumss_count3, force=True)
-            self.setDriver('GV3', sumss_count4, force=True)
-            self.setDriver('GV4', sumss_count5, force=True)
-            self.setDriver('GV5', sumss_count6, force=True)
+            return sumss_count1
 
-            # Binary/Digital Outputs
-            self.setDriver('GV6', output_one, force=True)
-            self.setDriver('GV7', output_two, force=True)
-            self.setDriver('GV8', output_tre, force=True)
-            self.setDriver('GV9', output_for, force=True)
-            self.setDriver('GV10', output_fiv, force=True)
-            self.setDriver('GV11', output_six, force=True)
+        input_two = self.bc.universalInput(2)    
+        if input_two is not None:
+            sumss_count2 = int(float(input_two))//1000
+            self.setDriver('GV1', sumss_count2, force=True)
+            return sumss_count2
+
+        input_thr = self.bc.universalInput(3)
+        if input_thr is not None:
+            sumss_count3 = int(float(input_thr))//1000
+            self.setDriver('GV2', sumss_count3, force=True)
+            return sumss_count3
+            
+        input_for = self.bc.universalInput(4)    
+        if input_for is not None:
+            sumss_count4 = int(float(input_for))//1000
+            self.setDriver('GV3', sumss_count4, force=True)
+            return sumss_count4
+
+        input_fiv = self.bc.universalInput(5)
+        if input_fiv is not None:
+            sumss_count5 = int(float(input_fiv))//1000
+            self.setDriver('GV4', sumss_count5, force=True)
+            return sumss_count5
+
+        input_six = self.bc.universalInput(6)
+        if input_six is not None:
+            sumss_count6 = int(float(input_six))//1000
+            self.setDriver('GV5', sumss_count6, force=True)
+            return sumss_count6
+
+        LOGGER.info(sumss_count1)
+        LOGGER.info(sumss_count2)
+        LOGGER.info(sumss_count3)
+        LOGGER.info(sumss_count4)
+        LOGGER.info(sumss_count5)
+        LOGGER.info(sumss_count6)
            
-            LOGGER.info(self.bc.universalInput(1))
-            LOGGER.info(self.bc.universalInput(2))
-            LOGGER.info(self.bc.universalInput(3))
-            LOGGER.info(self.bc.universalInput(4))
-            LOGGER.info(self.bc.universalInput(5))
-            LOGGER.info(self.bc.universalInput(6))
+        # Binary/Digital Outputs
+        output_one = (self.bc.binaryOutput(1))
+        output_two = (self.bc.binaryOutput(2))
+        output_tre = (self.bc.binaryOutput(3))
+        output_for = (self.bc.binaryOutput(4))
+        output_fiv = (self.bc.binaryOutput(5))
+        output_six = (self.bc.binaryOutput(6))
+                        
+        self.setDriver('GV0', sumss_count1, force=True)
+        self.setDriver('GV1', sumss_count2, force=True)
+        self.setDriver('GV2', sumss_count3, force=True)
+        self.setDriver('GV3', sumss_count4, force=True)
+        self.setDriver('GV4', sumss_count5, force=True)
+        self.setDriver('GV5', sumss_count6, force=True)
+
+        # Binary/Digital Outputs
+        self.setDriver('GV6', output_one, force=True)
+        self.setDriver('GV7', output_two, force=True)
+        self.setDriver('GV8', output_tre, force=True)
+        self.setDriver('GV9', output_for, force=True)
+        self.setDriver('GV10', output_fiv, force=True)
+        self.setDriver('GV11', output_six, force=True)
+           
+        LOGGER.info(self.bc.universalInput(1))
+        LOGGER.info(self.bc.universalInput(2))
+        LOGGER.info(self.bc.universalInput(3))
+        LOGGER.info(self.bc.universalInput(4))
+        LOGGER.info(self.bc.universalInput(5))
+        LOGGER.info(self.bc.universalInput(6))
 
     # Input Output Control       
     # Output Door-1
