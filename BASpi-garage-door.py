@@ -161,7 +161,19 @@ class BaspiGarage_one(polyinterface.Node):
         LOGGER.info('\t' + str(self.bc.boQty) + ' Binary outputs in this Doors 1-6')
         LOGGER.info('\t' + str(self.bc.biQty) + ' Binary inputs in This Doors 1-6')
         LOGGER.info('\t' + str(self.bc.aoQty) + ' Analog outputs In This Doors 1-6')
-                     
+        LOGGER.info(sumss_count1)
+        LOGGER.info(sumss_count2)
+        LOGGER.info(sumss_count3)
+        LOGGER.info(sumss_count4)
+        LOGGER.info(sumss_count5)
+        LOGGER.info(sumss_count6)
+        LOGGER.info(self.bc.universalInput(1))
+        LOGGER.info(self.bc.universalInput(2))
+        LOGGER.info(self.bc.universalInput(3))
+        LOGGER.info(self.bc.universalInput(4))
+        LOGGER.info(self.bc.universalInput(5))
+        LOGGER.info(self.bc.universalInput(6)
+
         ### Universal Inputs Also Conversion ###
         input_one = self.bc.universalInput(1)
         if input_one is not None:
@@ -199,13 +211,7 @@ class BaspiGarage_one(polyinterface.Node):
             self.setDriver('GV5', sumss_count6, force=True)
             return sumss_count6
 
-    LOGGER.info(sumss_count1)
-    LOGGER.info(sumss_count2)
-    LOGGER.info(sumss_count3)
-    LOGGER.info(sumss_count4)
-    LOGGER.info(sumss_count5)
-    LOGGER.info(sumss_count6)
-           
+        
         # Binary/Digital Outputs
         output_one = (self.bc.binaryOutput(1))
         output_two = (self.bc.binaryOutput(2))
@@ -229,12 +235,7 @@ class BaspiGarage_one(polyinterface.Node):
         self.setDriver('GV10', output_fiv, force=True)
         self.setDriver('GV11', output_six, force=True)
            
-    LOGGER.info(self.bc.universalInput(1))
-    LOGGER.info(self.bc.universalInput(2))
-    LOGGER.info(self.bc.universalInput(3)) 
-    LOGGER.info(self.bc.universalInput(4))
-    LOGGER.info(self.bc.universalInput(5))
-    LOGGER.info(self.bc.universalInput(6))
+        )
 
     # Input Output Control       
     # Output Door-1
