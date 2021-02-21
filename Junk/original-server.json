@@ -1,0 +1,22 @@
+{
+    "name": "BasGarageDoors",
+    "docs": "https://github.com/sjpbailey/udi-poly-baspi6u6r-garage-door-master",
+    "type": "python3",
+    "executable": "BASpi-garage-door.py",
+    "install": "install.sh",
+    "description": "Garage Door(s) Controller for up to 6 garage doors using Contemporary Controls BASpi DIY BACnet Device",
+    "notice": "Nothing can be blamed on me, use at your own risk",
+    "shortPoll": "60",
+    "longPoll": "240",
+    "profile_version": "2.6.1",
+    "credits": [
+        {
+            "title": "BASpi Garage Doors",
+            "author": "Steve Bailey",
+            "version": "2.7.8",
+            "date": "January 29, 2020",
+            "source": "hhttps://github.com/sjpbailey/udi-poly-baspi6u6r-garage-door-master",
+            "license": "https://github.com/sjpbailey/udi-poly-baspi6u6r-garage-door-master/LICENSE"
+        }
+    ]
+}
