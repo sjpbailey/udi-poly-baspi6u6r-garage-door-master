@@ -63,6 +63,7 @@ class GarageDoorsNodes(polyinterface.Node):
 
 
 
+        
         ### Universal Inputs Also Conversion ###
         input_one = self.bc.universalInput(1)
         if input_one is not None:
@@ -283,8 +284,7 @@ class GarageDoorsNodes(polyinterface.Node):
         else:
             self.setDriver('ST',1)
         LOGGER.debug('shortPoll')
-        #LOGGER.debug('%s: get ST=%s',self.lpfx,self.getDriver('ST'))
-
+        
     def longPoll(self):
         LOGGER.debug('longPoll')    
      
