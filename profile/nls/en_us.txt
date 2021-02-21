@@ -7,8 +7,8 @@ CMD-ctl-DISCOVER-NAME = Re-Discover
 CMD-ctl-UPDATE_PROFILE-NAME = Update Profile
 CMD-ctl-REMOVE_NOTICES_ALL-NAME = Remove All Notices
 CMD-ctl-REMOVE_NOTICE_TEST-NAME = Remove Notice Test
-##CMD-ctl-SET_DM-NAME = Set Logger Level
-##ST-ctl-GV1-NAME = Logger Level
+CMD-ctl-SET_DM-NAME = Set Logger Level
+ST-ctl-GV1-NAME = Logger Level
 ST-ctl-ST-NAME = NodeServer Online
 
 ND-baspidoor1_id-NAME = Doors 1-6
