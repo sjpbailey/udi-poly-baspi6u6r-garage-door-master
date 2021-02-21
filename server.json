@@ -10,12 +10,12 @@
   "shortPoll": "60",
   "longPoll": "240",
   "testMode": false,
-  "profile_version": "3.4.0",
+  "profile_version": "3.4.1",
   "credits": [
     {
       "title": "BASpi Garage Doors",
       "author": "Steven Bailey (sjpbailey)",
-      "version": "3.4.0",
+      "version": "3.4.1",
       "date": "January 29, 2020",
       "source": "https://github.com/sjpbailey/udi-poly-baspi6u6r-garage-door-master",
       "license": "https://github.com/sjpbailey/udi-poly-baspi6u6r-garage-door-master/LICENSE"
