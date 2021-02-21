@@ -146,8 +146,8 @@ class BaspiGarage_one(polyinterface.Node):
         sumss_count1=None
 
     def start(self):
-        if self.ipaddress is not None:
-            self.bc = Device(self.ipaddress)
+            if self.ipaddress is not None:
+                self.bc = Device(self.ipaddress)
                         
             ### BASpi One ###
             if self.bc.ePlatform == Platform.BASC_NONE:
@@ -222,7 +222,6 @@ class BaspiGarage_one(polyinterface.Node):
             LOGGER.info(self.bc.universalInput(6))
 
     # Input Output Control       
-    
     # Output Door-1
     def setOn1(self, command):
         if self.bc.binaryOutput(1) != 1:
@@ -240,8 +239,8 @@ class BaspiGarage_one(polyinterface.Node):
     def delay1(self, command):
         time.sleep(15)
         self.doorStat1(self)
-        #if self.bc.universalInput(1) == 0:
-        #    self.reportDrivers()
+        if self.bc.universalInput(1) == 0:
+            self.reportDrivers()
    
     # Door-1 Status
     def doorStat1(self, command):
@@ -408,6 +407,7 @@ class BaspiGarage_one(polyinterface.Node):
         else:
             if self.bc.universalInput(6) == 0:
                 self.setDriver("GV5", '0', report=True, force=True)
+        
      
     def query(self,command=None):
         self.reportDrivers()
