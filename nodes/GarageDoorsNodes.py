@@ -66,46 +66,52 @@ class GarageDoorsNodes(polyinterface.Node):
         
         ### Universal Inputs Also Conversion ###
         input_one = self.bc.universalInput(1)
+        sumss_count1 = 0
         if input_one is not None:
             sumss_count1 = int(float(input_one))//1000
             self.setDriver('GV0', sumss_count1, force=True)
             return sumss_count1
-        LOGGER.info(sumss_count1)
         
-        input_two = self.bc.universalInput(2)    
+        
+        input_two = self.bc.universalInput(2)
+        sumss_count2 = 0    
         if input_two is not None:
             sumss_count2 = int(float(input_two))//1000
             self.setDriver('GV1', sumss_count2, force=True)
             return sumss_count2
-        LOGGER.info(sumss_count2)
+        
      
         input_thr = self.bc.universalInput(3)
+        sumss_count3 = 0
         if input_thr is not None:
             sumss_count3 = int(float(input_thr))//1000
             self.setDriver('GV2', sumss_count3, force=True)
             return sumss_count3
-        LOGGER.info(sumss_count3)
+       
             
-        input_for = self.bc.universalInput(4)    
+        input_for = self.bc.universalInput(4)
+        sumss_count4 = 0    
         if input_for is not None:
             sumss_count4 = int(float(input_for))//1000
             self.setDriver('GV3', sumss_count4, force=True)
             return sumss_count4
-        LOGGER.info(sumss_count4)
+        
 
         input_fiv = self.bc.universalInput(5)
+        sumss_count5 = 0
         if input_fiv is not None:
             sumss_count5 = int(float(input_fiv))//1000
             self.setDriver('GV4', sumss_count5, force=True)
             return sumss_count5
-        LOGGER.info(sumss_count5)
+      
 
         input_six = self.bc.universalInput(6)
+        sumss_count6 = 0
         if input_six is not None:
             sumss_count6 = int(float(input_six))//1000
             self.setDriver('GV5', sumss_count6, force=True)
             return sumss_count6           
-        LOGGER.info(sumss_count6)
+       
 
     # Input Output Control       
     # Output Door-1
