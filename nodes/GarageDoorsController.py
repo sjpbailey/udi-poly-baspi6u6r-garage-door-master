@@ -49,16 +49,15 @@ class GarageDoorsController(Controller):
         self.poly.add_custom_config_docs("<b>This is some custom config docs data</b>")
 
     def shortPoll(self):
-        self.discover()
         LOGGER.debug('shortPoll')
         for node in self.nodes:
             if node != self.address:
                 self.nodes[node].shortPoll()
 
     def longPoll(self):
-        self.discover()
-        LOGGER.debug('longPoll')
         self.heartbeat()
+        LOGGER.debug('longPoll')
+        
 
     def query(self,command=None):
         self.check_params()
