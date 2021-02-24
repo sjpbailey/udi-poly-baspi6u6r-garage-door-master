@@ -54,12 +54,10 @@ class GarageDoorsController(Controller):
         for node in self.nodes:
             if node != self.address:
                 self.nodes[node].shortPoll()
-        
 
     def longPoll(self):
         self.heartbeat()
         LOGGER.debug('longPoll')
-                
 
     def query(self,command=None):
         self.check_params()
